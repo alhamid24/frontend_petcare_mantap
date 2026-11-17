@@ -6,11 +6,13 @@ import ServiceDetail from './pages/ServiceDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import UserDashboard from './pages/UserDashboard';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/dashboard/users" element={<UserDashboard />} />
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/layanan" element={<Layanan />} />
